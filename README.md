@@ -23,6 +23,7 @@ make build
 
 ### Add below function at the end of your .bashrc, replace `/path/to/claude_in_podman` with full path where claude_in_podman was cloned to
 
+```bash
 function claude {
     claude_dir=/path/to/claude_in_podman
     if [ -z "$1" ]; then
@@ -32,6 +33,7 @@ function claude {
         make -C $claude_dir run HOST_PATH_TO_PROJECT="$proj_dir" CONTAINER_PATH_TO_MOUNT_PROJECT="$proj_dir";
     fi;
 }
+```
 
 Once updated:
 
