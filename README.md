@@ -1,6 +1,6 @@
 # Claude in Podman
 
-Run **Anthropic Claude Code** (`claude`) within unprivileged Podman container 
+Run **Anthropic Claude Code** (`claude`) within unprivileged Podman (or Docker) container 
 
 Installed directly from https://github.com/anthropics/claude-code
 
@@ -10,10 +10,12 @@ Installed directly from https://github.com/anthropics/claude-code
 
 ## Requirements
 
-- [Podman](https://podman.io/) (installed and configured)
+- [Podman](https://podman.io/) or [Docker](https://www.docker.com/) (installed and configured)
 - GNU Make
 
 ## Getting Started
+
+Note: all `make` commands below make use of Podman by default. Pass `Docker=docker` if you prefer to run in docker container.
 
 ### Build the image
 
