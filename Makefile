@@ -54,7 +54,7 @@ run:
 		-v "${CURDIR}"/docker_files/home/.claude:/home/${UNAME}/.claude \
 		-v "${CURDIR}"/docker_files/home/.claude.json:/home/${UNAME}/.claude.json \
 		-v "${HOST_PATH_TO_PROJECT}":"${CONTAINER_PATH_TO_MOUNT_PROJECT}" \
-		--workdir /home/${UNAME} \
+		--workdir "${CONTAINER_PATH_TO_MOUNT_PROJECT}" \
 		${CLAUDE_IMAGE}
 
 logs:
